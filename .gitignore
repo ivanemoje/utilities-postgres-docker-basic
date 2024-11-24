@@ -1,0 +1,22 @@
+# Python related
+*.pyc
+*.pyo
+__pycache__/
+venv/
+.env
+
+# Docker related
+*.log
+*.pid
+*.sock
+*.db
+*.sqlite
+
+# FastAPI specific
+.env
+
+# VSCode settings
+.vscode/
+
+# Docker Compose Volumes
+postgres_data/

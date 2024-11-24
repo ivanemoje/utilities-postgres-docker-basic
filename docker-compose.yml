@@ -1,0 +1,41 @@
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: mydb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - mynetwork
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: always  # Restart policy in case of failure
+
+  fastapi:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy  # Wait for db to be healthy
+    environment:
+      DATABASE_URL: "postgresql://postgres:postgres@db:5432/mydb"  # Use 'db' as the hostname
+    ports:
+      - "8008:8000"
+    volumes:
+      - .:/app
+    networks:
+      - mynetwork
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+volumes:
+  postgres_data:
+
+networks:
+  mynetwork:
+    driver: bridge
