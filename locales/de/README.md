@@ -9,15 +9,17 @@ Wir werden auch eine grundlegende Python-Projektstruktur für die Interaktion mi
 ## Projektstruktur
 Lassen Sie uns zunächst unsere Projektstruktur einrichten. Erstellen Sie ein neues Verzeichnis für Ihr Projekt und fügen Sie die folgenden Dateien hinzu:
 
+```markdown
 postgres-docker/
 │
 ├── .gitignore
-├─── Dockerfile
-├─── main.py
-├─── requirements.txt
-└─── database.py
-├─── images/
+├── Dockerfile
+├── main.py
+├── requirements.txt
+└── database.py
+├── images/
 ├── .gitignore
+```
 
 ## Ausführen
 Ausführen

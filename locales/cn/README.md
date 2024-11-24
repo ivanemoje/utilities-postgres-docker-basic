@@ -9,15 +9,17 @@ PostgreSQL 是一个功能强大的开源关系数据库管理系统。在本存
 ## 项目结构
 首先，我们来设置项目结构。为你的项目创建一个新目录，并添加以下文件：
 
+```markdown
 postgres-docker/
 │
 ├── .gitignore
 ├── Dockerfile
-├─── main.py
+├── main.py
 ├── requirements.txt
-└──数据库.py
+└── database.py
 ├── images/
 ├── .gitignore
+```
 
 ## 运行
 执行

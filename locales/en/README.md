@@ -9,6 +9,7 @@ We'll also set up a basic Python project structure to interact with the database
 ## Project Structure
 First, let's set up our project structure. Create a new directory for your project and add the following files:
 
+```markdown
 postgres-docker/
 │
 ├── .gitignore
@@ -18,7 +19,7 @@ postgres-docker/
 └── database.py
 ├── images/
 ├── .gitignore
-
+```
 ## Run
 Execute
 ``` Powershell

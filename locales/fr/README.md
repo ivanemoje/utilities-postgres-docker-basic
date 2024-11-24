@@ -9,6 +9,7 @@ Nous mettrons également en place une structure de projet Python de base pour in
 ## Structure du projet
 Tout d'abord, mettons en place la structure de notre projet. Créez un nouveau répertoire pour votre projet et ajoutez les fichiers suivants :
 
+```markdown
 postgres-docker/
 │
 ├── .gitignore
@@ -17,7 +18,8 @@ postgres-docker/
 ├── requirements.txt
 └── database.py
 ├── images/
-├─── .gitignore
+├── .gitignore
+```
 
 ## Exécuter
 Exécuter

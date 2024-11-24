@@ -4,11 +4,12 @@ PostgreSQL es un potente sistema de gestión de bases de datos relacionales de c
 También configuraremos una estructura básica de proyecto Python para interactuar con la base de datos.
 
 ## Pre-requisitos
-- Docker](https://www.docker.com/)
+- [Docker](https://www.docker.com/)
 
 ## Estructura del Proyecto
 Primero, vamos a configurar la estructura de nuestro proyecto. Crea un nuevo directorio para tu proyecto y añade los siguientes archivos:
 
+```markdown
 postgres-docker/
 │
 ├── .gitignore
@@ -18,6 +19,7 @@ postgres-docker/
 └── database.py
 ├── images/
 ├── .gitignore
+```
 
 ## Ejecutar
 Ejecutar
